@@ -48,6 +48,8 @@ public class  Release extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	
+    	RobotMap.grabberGrabberSolenoid.set(DoubleSolenoid.Value.kOff);
     }
 
     // Called when another command which requires one or more of the same

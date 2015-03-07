@@ -34,7 +34,7 @@ public class  LifterDown extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     	
-    	RobotMap.lifterLifterSolenoid.set(DoubleSolenoid.Value.kReverse);
+    	RobotMap.lifterLifterSolenoid.set(DoubleSolenoid.Value.kOff);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -48,6 +48,8 @@ public class  LifterDown extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	
+    	RobotMap.lifterLifterSolenoid.set(DoubleSolenoid.Value.kOff);
     }
 
     // Called when another command which requires one or more of the same
