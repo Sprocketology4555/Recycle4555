@@ -37,15 +37,15 @@ public class RobotMap {
         driveTrainSpeedController1 = new Talon(0);
         LiveWindow.addActuator("Drive Train", "Speed Controller 1", (Talon) driveTrainSpeedController1);
         
-        driveTrainSpeedController2 = new Talon(1);
+        driveTrainSpeedController2 = new Talon(2);
         LiveWindow.addActuator("Drive Train", "Speed Controller 2", (Talon) driveTrainSpeedController2);
         
         driveTrainRobotDrive21 = new RobotDrive(driveTrainSpeedController1, driveTrainSpeedController2);
         
         driveTrainRobotDrive21.setSafetyEnabled(true);
         driveTrainRobotDrive21.setExpiration(0.1);
-        driveTrainRobotDrive21.setSensitivity(0.5);
-        driveTrainRobotDrive21.setMaxOutput(1.0);
+        driveTrainRobotDrive21.setSensitivity(1.0);
+        driveTrainRobotDrive21.setMaxOutput(1.);
         
         compressor = new Compressor(0);
         

@@ -6,7 +6,7 @@ import edu.wpi.first.wpilibj.Compressor;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class Compression extends Subsystem{
+public class Compression extends Subsystem {
 	
 	Compressor compressor = Robot.compressor;
 	
